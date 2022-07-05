@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MVCShop.Models.Bag>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/Style.css" />
+    <title>ListBags</title>
+</head>
+<body>
+    <h1>
+        <a asp-action=""> <img width="100" height="100" src="https://icon-library.com/images/845252_commerce_512x512.png"></a>
+        BagShoper
+    </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th><a asp-action=""> Home </a></th>
+                <th><a asp-action="AddProduct"> Add Bag </a></th>
+                <th><a asp-action="ListBags"> Bags </a></th>
+            </tr>
+        </thead>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Export</th>
+                <th>Discription</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (MVCShop.Models.Bag r in Model)
+            {
+            <tr>
+                <td>@r.Name</td>
+                <td><img src="@r.ImgUrl" width="50" height="50" /> </td>
+                <td>@r.Price</td>
+                <td>@r.Export</td>
+                <td>@r.Discription</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>

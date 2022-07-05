@@ -1,0 +1,82 @@
+﻿body
+{
+    background-color: gray;
+}
+
+h1 {
+    font-family: 'Century Gothic';
+    color: orange;
+}
+
+h4 {
+    font-family: 'Century Gothic';
+    color: orange;
+}
+
+th {
+    font-family: 'Century Gothic';
+    margin-left: 300px;
+    align-content: center;
+    background-color: black;
+    border-collapse: collapse;
+    border: 3px solid orange;
+    padding: 10px;
+}
+
+a
+{
+    color: orange;
+}
+
+button {
+    font-family: 'Century Gothic';
+    font-size: 32px;
+    color: orange;
+    background-color: black;
+}
+
+.field-validation-error {
+    background-color: black;
+    color: #f00;
+    font-family: 'Century Gothic';
+}
+
+.field-validation-valid {
+    background-color: black;
+    display: none;
+}
+
+.input-validation-error {
+    background-color: black;
+    border: 1px solid #f00;
+    background-color: #fee;
+    font-family: 'Century Gothic';
+    color: orange;
+}
+
+.validation-summary-errors {
+    background-color: black;
+    font-weight: bold;
+    color: #f00;
+    font-family: 'Century Gothic';
+}
+
+.validation-summary-valid {
+    background-color: black;
+    display: none;
+}
+
+label {
+    background-color: black;
+    color: orange;
+}
+input {
+    background-color: black;
+    color: orange;
+}
+
+select {
+    background-color: black;
+    color: orange;
+    font-family: 'Century Gothic';
+}

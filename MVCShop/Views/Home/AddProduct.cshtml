@@ -1,0 +1,57 @@
+﻿@model MVCShop.Models.Bag
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/Style.css" />
+    <title>AddProduct</title>
+</head>
+<body>
+    <h1>
+        <a asp-action=""> <img width="100" height="100" src="https://icon-library.com/images/845252_commerce_512x512.png"></a>
+        BagShoper
+    </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th><a asp-action=""> Home </a></th>
+                <th><a asp-action="AddProduct"> Add Bag </a></th>
+                <th><a asp-action="ListBags"> Bags </a></th>
+            </tr>
+        </thead>
+    </table>
+
+    <form asp-action="AddProduct" method="post">
+        <div asp-validation-summary="All"></div>
+        <p>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="ImgUrl">Image URL:</label>
+            <input asp-for="ImgUrl" />
+        </p>
+        <p>
+            <label asp-for="Price">Price:</label>
+            <input asp-for="Price" />
+        </p>
+        <p>
+            <label>Export country:</label>
+            <select asp-for="Export">
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+                <option value="Kazakhastan">Kazakhastan</option>
+            </select>
+        </p>
+
+        <p>
+            <label asp-for="Discription">Discription:</label>
+            <input asp-for="Discription" />
+        </p>
+        <button type="submit">Create Bag!</button>
+    </form>
+</body>
+</html>
